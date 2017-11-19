@@ -6,8 +6,8 @@ foreach($fuck as $sites) {
 	echo "website => $sites\r";
 	sleep(2);
 	$config = @file_get_contents("http://".$site);
-	if(preg_match("/Uname:/i",$config)) {
-    file_put_contents("gang.txt", "weedatae file find => $site\r\n",FILE_APPEND);
+	if(preg_match("/FILTRE/i",$config)) {
+    file_put_contents("results.txt", "file find => $site\r\n",FILE_APPEND);
 	}
 	
 }
