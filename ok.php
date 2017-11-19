@@ -1,6 +1,5 @@
 <?php
 $fuck = file($argv[1]);
-echo "Create by Wilson <3\r\n"; 
 foreach($fuck as $sites) {
 	$site=trim($sites);
 	echo "website => $sites\r";
